@@ -1,0 +1,7 @@
+filter_path: ./filters/
+webui_url: 127.0.0.1:23333
+username: None
+password: None
+filter_order:
+  - test.yaml
+  # - test.yaml

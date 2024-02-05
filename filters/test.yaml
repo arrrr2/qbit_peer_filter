@@ -1,0 +1,9 @@
+list_type: black
+multi_rules_behavior: intersection
+cycle: 1
+client_filter: keyword
+client_expression: devel
+# ip:
+#   - 221.5.5.5
+#   - 221.6.6.6
+# uploaded_portion: 0.75
