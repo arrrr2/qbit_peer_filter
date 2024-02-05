@@ -69,7 +69,7 @@ class filter():
 
             cf = conf.get('uploaded_portion', None)
             if cf is not None:
-                checklist['upp'] = lambda x: x > cf
+                checklist['upp'] = lambda x: x > cf / 1024 / 1024 / 1024
 
             self.checklist = checklist
             self.config = config
