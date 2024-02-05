@@ -18,7 +18,7 @@
 |list_type|满足过滤规则的 peer 是被 ban 还是放行|black, white|black|
 |multi_rules_behavior|同一文件下多条规则是需要全部满足还是任意一个|intersection (同时满足), union (任一)|intersection|
 |cycle|检查时间，单位为秒|300 (默认)|120|
-|client_filter|判断客户端名称的方式|regex, keyword, match (完全匹配)|keyword|
+|client_filter|判断客户端名称的方式|regex, keyword, exact_match|keyword|
 |client_expression|判断依据||devel|
 |ip|符合要求的 ip 范围||['192.168.1.1', '192.168.1.233']|
 |uploaded_portion|已上传数据量占种子总大小之比||0.75|
@@ -47,7 +47,7 @@ Usage: ```python main.py```
 |list_type|Whether peers meeting the filter criteria are to be banned or allowed|black, white|black|
 |multi_rules_behavior|Whether multiple rules in the same file need to be all met or just any|intersection (all), union (any)|intersection|
 |cycle|Check time, in seconds|300 (default)|120|
-|client_filter|Method to judge client names|regex, keyword, match (exact match)|keyword|
+|client_filter|Method to judge client names|regex, keyword, exact_match|keyword|
 |client_expression|Basis for judgment||devel|
 |ip|IP range that meets the criteria||['192.168.1.1', '192.168.1.233']|
 |uploaded_portion|Ratio of uploaded data to total size of the torrent||0.75|
