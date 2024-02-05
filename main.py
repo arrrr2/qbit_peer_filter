@@ -126,9 +126,7 @@ class filter():
                     hash = torrent.hash
                     peers = qbcli.sync.torrentPeers(hash)
                     if len(peers.peers) == 0: continue
-                    # print(len(peers.peers))
                     tst = torrent_status(torrent, qbcli)
-                    # print(tst)
                     all_banned_peers += self.check(tst)
             self.ban_peers(all_banned_peers)
             await asyncio.sleep(self.config['cycle'])
